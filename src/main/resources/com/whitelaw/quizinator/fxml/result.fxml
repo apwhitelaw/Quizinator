@@ -5,32 +5,29 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="750.0" stylesheets="@../css/dark.css"
-            xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <VBox alignment="CENTER" layoutX="175.0" layoutY="92.0" prefHeight="200.0" prefWidth="100.0"
-          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-          AnchorPane.topAnchor="0.0">
+<AnchorPane prefHeight="500.0" prefWidth="750.0" stylesheets="@../css/dark.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox alignment="CENTER" layoutX="175.0" layoutY="92.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
             <Label fx:id="scoreLabel" text="Score: 100.0%">
                 <font>
-                    <Font size="42.0"/>
+                    <Font size="42.0" />
                 </font>
             </Label>
-            <Label text="Created by Austin Whitelaw"/>
+            <Label text="Created by Austin Whitelaw" />
         </VBox>
         <TableView fx:id="resultsTable" prefHeight="200.0" prefWidth="200.0">
             <VBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </VBox.margin>
         </TableView>
         <Separator prefWidth="200.0">
             <VBox.margin>
-                <Insets top="20.0"/>
+                <Insets top="20.0" />
             </VBox.margin>
         </Separator>
-        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
-            <Button mnemonicParsing="false" onAction="#onQuitClicked" text="Quit"/>
-            <Button fx:id="restartButton" mnemonicParsing="false" onAction="#onRestartClicked" text="Restart"/>
+        <HBox alignment="CENTER" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <Button mnemonicParsing="false" onAction="#onQuitClicked" text="Quit" />
+            <Button fx:id="restartButton" mnemonicParsing="false" onAction="#onRestartClicked" text="Restart" />
         </HBox>
     </VBox>
 </AnchorPane>
